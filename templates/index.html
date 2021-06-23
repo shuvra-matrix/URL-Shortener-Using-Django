@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+    <h1>Enter Your URL</h1>
+    <form method="POST">
+        <input type="text" name="form" placeholder="https://example.com">
+        {% csrf_token %}
+    <input class= "btn btn-primary" type="submit" name="submit" value="Submit">
+    </form>
+    </div>
+    <footer class="page-footer font-small blue">
+         <div class="footer-copyright text-center py-3">© 2020 Copyright:
+          <a href="https://github.com/shuvra-matrix">Shuvra Chakrabarty</a>
+        </div>
+    </footer>
+</body>
+</html>
